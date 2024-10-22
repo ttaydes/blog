@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>CTF | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="WEB ping  ;A;B先执行A，再执行B&amp;A&amp;B简单拼接，A B之间无制约关系AB显示B的执行结果&amp;&amp;A&amp;&amp;BA执行成功，然后才会执行BABA执行失败，然后才会执行B若上述被过滤 可用换行%0a url编码替代 （在网址输入框）代替空格$IFS  ${IFS} $IFS$1 &#x2F;&#x2F;1 改 成 1改成1改成加其他数字貌似都行 &amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CTF">
+<meta property="og:url" content="http://example.com/2023/05/31/winhex-%E4%BC%AA%E5%8A%A0%E5%AF%86/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="WEB ping  ;A;B先执行A，再执行B&amp;A&amp;B简单拼接，A B之间无制约关系AB显示B的执行结果&amp;&amp;A&amp;&amp;BA执行成功，然后才会执行BABA执行失败，然后才会执行B若上述被过滤 可用换行%0a url编码替代 （在网址输入框）代替空格$IFS  ${IFS} $IFS$1 &#x2F;&#x2F;1 改 成 1改成1改成加其他数字貌似都行 &amp;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-05-30T16:09:56.000Z">
+<meta property="article:modified_time" content="2024-10-22T15:31:52.718Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-winhex-伪加密" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/31/winhex-%E4%BC%AA%E5%8A%A0%E5%AF%86/" class="article-date">
+  <time class="dt-published" datetime="2023-05-30T16:09:56.000Z" itemprop="datePublished">2023-05-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/CTF/">CTF</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      CTF
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h1><ul>
+<li><p>ping</p>
+</li>
+<li><p>;A;B先执行A，再执行B&amp;A&amp;B简单拼接，A B之间无制约关系AB显示B的执行结果&amp;&amp;A&amp;&amp;BA执行成功，然后才会执行BABA执行失败，然后才会执行B若上述被过滤 可用换行%0a url编码替代 （在网址输入框）代替空格$IFS</p>
+<ul>
+<li>${IFS} $IFS$1 &#x2F;&#x2F;1 改 成 1改成1改成加其他数字貌似都行 &lt; &lt;&gt; {cat,flag.php} &#x2F;&#x2F;用逗号实现了空格功能 %20 %09&#x2F; （斜杠也可以）</li>
+</ul>
+</li>
+<li><p><code>$(printf &quot;路径&quot;)</code>代替路径 里面用十六进制\x66形式</p>
+</li>
+<li><p>php 文件包含漏洞文件包含函数加载的参数没有经过过滤或严格定义，可以被用户控制， 包含其他恶意文件，导致了执行非预期代码</p>
+</li>
+</ul>
+<p>分类：远程文件包含RFI</p>
+<p>本地文件包含LFI</p>
+<p><em>区分他们最简单的方法就是 php.ini 中是否开启了allow_url_include。 如果开启了我们就有可能包含远程文件</em></p>
+<p>_php 中引发文件包含漏洞的通常是以下四个函数_： 1、include() 当使用该函数包含文件时，只有代码执行到 include() 函数时才将文件包含进来， 发生错误时只给出一个警告，继续向下执行。</p>
+<p>2、include_once() 功能和 include() 相同，区别在于当重复调用同一文件时，程序只调用一次。</p>
+<p>3、require() 只要程序一执行就会立即调用文件,发生错误的时候会输出错误信息,并且终止脚本的运行</p>
+<p>4、require_once() 它的功能与 require() 相同，区别在于当重复调用同一文件时，程序只调用一次。</p>
+<p><strong>php伪协议利用</strong></p>
+<ol>
+<li>data协议data:&#x2F;&#x2F;协议必须在满足allow_url_fopen&#x3D;on，allow_url_include&#x3D;on下使用</li>
+</ol>
+<p>data:&#x2F;&#x2F; 伪协议利用php中流的概念，将原本include的文件流重定向到可控制的参数中</p>
+<p>data:&#x2F;&#x2F;text&#x2F;plain,<?php phpinfo();?><br>    &#x2F;&#x2F;如果此处对特殊字符进行了过滤，我们还可以通过base64编码后再输入：<br>data:&#x2F;&#x2F;text&#x2F;plain;base64,PD9waHAgcGhwaW5mbygpOyA&#x2F;Pg&#x3D;&#x3D;</p>
+<p>2.php协议</p>
+<p>利用条件：<br>1、allow_url_include &#x3D; On。</p>
+<p>php:&#x2F;&#x2F;filter用于读取源码。<br>eg: ?file1&#x3D;php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;flag.php&amp;file2&#x3D;php:&#x2F;&#x2F;input<br>​<br>php:&#x2F;&#x2F;input用于执行php代码<br>dict:&#x2F;&#x2F;<br>file:&#x2F;&#x2F;&#x2F;</p>
+<p><strong>php序列化和反序列化</strong></p>
+<p>1.<strong>序列化就是将一个对象转换成字符串。字符串包括，属性名，属性值，属性类型和该对象对应的类名。</strong> <strong>反序列化则相反将字符串重新恢复成对象</strong></p>
+<ul>
+<li>serialize() 函数会检查类中是否存在一个魔术方法 <code>__sleep()</code>。如果存在，**<code>__sleep()</code>方法会先被调用，然后才执行序列化操作<strong>。</strong>可以在<code>__sleep()</code>方法里决定哪些属性可以被序列化。如果没有__sleep()方法则默认序列化所有属性**</li>
+</ul>
+<?php  
+    class ctf{  
+        public $flag;  
+        public $name;  
+        public $age;  
+          
+    }  
+    $ctfer = new ctf();  
+    $ctfer->flag = 'flag{adada}';  
+    $ctfer->name = 'ev';  
+    $ctfer->age = '12';  
+    echo serialize($ctfer);  
+    echo '<br>';  
+​  
+    var\_dump(unserialize($a));  
+?>
+
+<ul>
+<li>反序列化函数unserialize()。反序列化就是将一个序列化了的对象或数组字符串，还原回去unserialize的时候，会 检查时候存在<strong>wakeup()函数，如果存在的话，会优先调用</strong>wakeup()函数。</li>
+<li>ascill 的超出打印区域将两位一组的十六进制 &#x3D;&#x3D;》十进制&#x3D;&#x3D;》 减去128 &#x3D;&#x3D;》转为ascii<strong>sql注入类</strong></li>
+<li>sqllite注入<ul>
+<li>sqlite注释符是‘–</li>
+<li>查询其全局模式表sqlite_master（存放本数据库所有表、视图、索引、触发器等的定义）可找到用户表的sql定义’</li>
+<li>payload：user&#x3D;’ union select name,sql from sqlite_master –</li>
+</ul>
+</li>
+<li>sql注入绕过姿势：<ul>
+<li>&#x2F;**&#x2F;或者++替换空格</li>
+<li>大小写</li>
+<li>递归重复</li>
+<li>待补充。。。</li>
+</ul>
+</li>
+<li>sql注入回显 （攻防世界–fakebook iframe的src暴露信息）可以结合序列化的返回渲染页面</li>
+<li>当目录存在某个flag.txt 但是不能读取或显示 用 伪协议 file:&#x2F;&#x2F;&#x2F;path 获取<strong>ping中检测绕过</strong><ul>
+<li>构造变量 若flag进行过滤 设置变量接受字母</li>
+<li>若过滤bash 使用sh 并将命令编码echo$IFS$1Y2F0IGZsYWcucGhwbase64$IFS$1-dsh</li>
+<li>内联执行 使用 `` 代替 ，将反引号内命令的输出作为输入执行，即：&#x2F;?ip&#x3D;2.2.2.2;cat$IFS$1`ls`</li>
+</ul>
+</li>
+</ul>
+<h2 id="代码审计"><a href="#代码审计" class="headerlink" title="代码审计"></a>代码审计</h2><h3 id="（一）php"><a href="#（一）php" class="headerlink" title="（一）php"></a>（一）php</h3><p>1.比较</p>
+<ul>
+<li>“&#x3D;&#x3D;” 与“&#x3D;&#x3D;&#x3D;”注意：”&#x3D;&#x3D;“ 比较字符串和整形 会强制转换成字符串如 “1admin” 与 1 比较 &#x3D;&#x3D;&#x3D;&gt; true 取字符串开头数字转换为字符</li>
+</ul>
+<h6 id="若以“0e”开头的字符串-会当作0x10的xxx次方-结果为零"><a href="#若以“0e”开头的字符串-会当作0x10的xxx次方-结果为零" class="headerlink" title="若以“0e”开头的字符串 会当作0x10的xxx次方 结果为零"></a>若以“0e”开头的字符串 会当作0x10的xxx次方 结果为零</h6><ul>
+<li><p>hash 比较缺陷md5(‘240610708’) &#x3D;&#x3D; md5(‘QNKCDZ0’) 结果都是0e开头 所以都是零 结果相等var_dump(md5(‘240610708’)&#x3D;&#x3D;md5(‘QNKCDZO’));<br>var_dump(md5(‘aabg7XSs’)&#x3D;md5(‘aabC9RqS’));<br>var_dump(sha1(‘aarozmok’)&#x3D;&#x3D;shal(‘aaK1STfY’));<br>var_dump(sha1(‘aa08ZKZF’)&#x3D;&#x3D;sha1(‘aa30FF9m’));<br>var_dump(‘e010e2”&#x3D;’1e3’):<br>var_dump(‘0×1234Ab’&#x3D;&#x3D;’1193131’)：<br>var_dump(‘0xABCdef’&#x3D;&#x3D;’0xABCdef’);<br>​</p>
+</li>
+<li><p>bool欺骗存在json_decode 和 unserialize 时候 部分结构解释为bool类型 造成欺骗</p>
+</li>
+<li><p>数字转换欺骗</p>
+<ul>
+<li>一个字符串是0x开头的时候，PHP会将此字符串解析成为十进制然后再进行比较所以0x1e240 &#x3D;&#x3D; 123456</li>
+</ul>
+</li>
+<li><p><strong>md5()<strong>只能传输字符串 若传入array会使所有array的md5相同</strong>hash碰撞</strong> 会碰撞出两个相同的值switch()会对传入字符串类型强转</p>
+</li>
+<li><p>is_numeric() （bool）</p>
+<ul>
+<li>传入是是数字和数字字符串则返回 TRUE</li>
+<li>如果此时传入十六进制0x3120616e6420313d31 存入后字符串 为 1 and 1&#x3D;1可进行二次注入</li>
+</ul>
+</li>
+<li><p>in_array() &#x2F; array_search()</p>
+<ul>
+<li>eg: ‘abc’ 在 array(0,1,2) 中 返回true</li>
+</ul>
+</li>
+<li><p>empty （以下都认为 为空）</p>
+<ul>
+<li>“” (空字符串)</li>
+<li>0 (作为整数的0)</li>
+<li>0.0 (作为浮点数的0)</li>
+<li>“0” （作为字符串的0）</li>
+<li>NULL</li>
+<li>FALSE</li>
+<li>array() （空数组）</li>
+<li>$var; (一个声明了 但无值的变量)</li>
+</ul>
+</li>
+<li><p>$$ 的用法<a target="_blank" rel="noopener" href="https://www.yiibai.com/php/php-dollar-doubledollar.html">“$$的用法”</a></p>
+</li>
+<li><p>extract()</p>
+</li>
+<li><p>parse_str()把查询字符串解析到变量中</p>
+</li>
+</ul>
+<h6 id="php常用函数："><a href="#php常用函数：" class="headerlink" title="php常用函数："></a>php常用函数：</h6><ul>
+<li><p>ord() :ord() 函数返回字符串中第一个字符的 ASCII 值。</p>
+</li>
+<li><p>strrev() 反转字符串</p>
+</li>
+<li><p>substr() 返回字符串的子串 格式：substr ( string, start , length )</p>
+</li>
+<li><p>isset() 用于检测变量是否已设置，且非 NULL</p>
+</li>
+<li><p>preg_match() 用于执行一个正则表达式匹配</p>
+</li>
+<li><p>str_rot13() 函数对字符串执行 ROT13 编码。ROT13 编码是把每一个字母在字母表中向前移动 13 个字母得到。数字和非字母字符保持不变。</p>
+</li>
+<li><p>call_user_func() 传入有参或无参函数 后面跟上参数</p>
+</li>
+<li><p>python反编译 uncompyle6 当前文件名.pyc &gt; 保存的文件名.py</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/05/31/winhex-%E4%BC%AA%E5%8A%A0%E5%AF%86/" data-id="cm2klufuj000nikvhde4d1ll2" data-title="CTF" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/05/31/%E5%B0%8F%E8%BF%AA%E7%BD%91%E5%AE%89%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          web安全
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/05/31/wp-global-styles-astra/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Custom Styles</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CTF/">CTF</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/my%E6%97%A5%E5%BF%97/">my日志</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/uncategorized/">uncategorized</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">基础学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B%E5%8F%8A%E5%88%86%E4%BA%AB/">技术教程及分享</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">June 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">May 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/10/22/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/11/java%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E8%AF%AD%E8%A8%80%EF%BC%882024-8-11%EF%BC%89/">Java是世界上最好的语言（2024.8.11）</a>
+          </li>
+        
+          <li>
+            <a href="/2024/06/06/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8/">内网安全</a>
+          </li>
+        
+          <li>
+            <a href="/2024/06/06/282/">漏洞复现-CVE-2024-36039</a>
+          </li>
+        
+          <li>
+            <a href="/2024/04/15/sql-blind%E7%9B%B2%E6%B3%A8-%E7%BB%BC%E5%90%88%E8%84%9A%E6%9C%AC-by-aydes/">SQL blind(盲注) 综合脚本 by aydes</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
