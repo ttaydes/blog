@@ -23,7 +23,7 @@
     <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950代码如下（思路从网上找的）void midTraverseStack(TreeLink root)&#123;        stack&lt;treenode *&gt;S;         S.push(root)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二叉树的遍历之栈">
-<meta property="og:url" content="https://ttaydes.github.io/blog/2023/06/11/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E4%B9%8B%E6%A0%88-1/index.html">
+<meta property="og:url" content="http://127.0.0.1:4000/blog/2023/06/11/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E4%B9%8B%E6%A0%88-1/index.html">
 <meta property="og:site_name" content="aydes&#39; b10g">
 <meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950代码如下（思路从网上找的）void midTraverseStack(TreeLink root)&#123;        stack&lt;treenode *&gt;S;         S.push(root)">
 <meta property="og:locale">
@@ -96,7 +96,7 @@
     </section>
     </div>
 </article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/blog/2023/06/11/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E4%B9%8B%E6%A0%88/">二叉树的遍历之栈</a></div><div class="item" id="next"><div class="note">Older</div><a href="/blog/2023/06/01/%E5%AF%BC%E8%88%AA%E6%9D%A1%E8%8F%9C%E5%8D%95/">导航条菜单</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/blog/2023/11/14/203/">技术杂项</a></div><div class="item" id="next"><div class="note">Older</div><a href="/blog/2023/06/11/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E4%B9%8B%E6%A0%88/">二叉树的遍历之栈</a></div></section></div>
 
 
 
@@ -131,7 +131,7 @@
     ctx.search = {};
     ctx.search.service = `local_search`;
     if (ctx.search.service == 'local_search') {
-      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
       ctx.search[ctx.search.service] = service_obj;
     }
   }
@@ -433,7 +433,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {

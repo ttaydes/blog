@@ -23,7 +23,7 @@
     <meta name="description" content="Web Easymd5  打开发现两个上传界面 显示需要上传pdf文件类型 一开始以为是文件上传漏洞利用发现抓不到上传的包 加上后面的到的提示 去尝试md5碰撞 可以假设上传两个相同md5的文件 利用md5相同文件生成工具hashclash 生成两个pdf文件后上传成功 并且获得flag  Php的后门  打开是phpinfo 的界面 根据题目提示 php后门漏洞 由wappalzer显示php版">
 <meta property="og:type" content="article">
 <meta property="og:title" content="青少年CTF 2024 round1 wp">
-<meta property="og:url" content="https://ttaydes.github.io/blog/2024/03/02/%E9%9D%92%E5%B0%91%E5%B9%B4ctf-2024-round1-wp/index.html">
+<meta property="og:url" content="http://127.0.0.1:4000/blog/2024/03/02/%E9%9D%92%E5%B0%91%E5%B9%B4ctf-2024-round1-wp/index.html">
 <meta property="og:site_name" content="aydes&#39; b10g">
 <meta property="og:description" content="Web Easymd5  打开发现两个上传界面 显示需要上传pdf文件类型 一开始以为是文件上传漏洞利用发现抓不到上传的包 加上后面的到的提示 去尝试md5碰撞 可以假设上传两个相同md5的文件 利用md5相同文件生成工具hashclash 生成两个pdf文件后上传成功 并且获得flag  Php的后门  打开是phpinfo 的界面 根据题目提示 php后门漏洞 由wappalzer显示php版">
 <meta property="og:locale">
@@ -152,7 +152,7 @@
     </section>
     </div>
 </article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/blog/2024/04/12/274-1/">Untitled Post - 5</a></div><div class="item" id="next"><div class="note">Older</div><a href="/blog/2024/03/02/%E9%9D%92%E5%B0%91%E5%B9%B4ctf-2024-round1-wp-1/">青少年CTF 2024 round1 wp</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/blog/2024/04/12/274/">Untitled Post - 5</a></div><div class="item" id="next"><div class="note">Older</div><a href="/blog/2024/03/02/%E9%9D%92%E5%B0%91%E5%B9%B4ctf-2024-round1-wp-1/">青少年CTF 2024 round1 wp</a></div></section></div>
 
 
 
@@ -194,7 +194,7 @@
     ctx.search = {};
     ctx.search.service = `local_search`;
     if (ctx.search.service == 'local_search') {
-      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
       ctx.search[ctx.search.service] = service_obj;
     }
   }
@@ -496,7 +496,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {

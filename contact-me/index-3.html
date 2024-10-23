@@ -20,12 +20,12 @@
   <title>Contact me - aydes' b10g</title>
 
   
-    <meta name="description" content="QQ: 1686046681 email: &#x74;&#x61;&#x79;&#x33;&#x33;&#x34;&#x35;&#54;&#x31;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">
+    <meta name="description" content="QQ: 1686046681 email: &#x74;&#x61;&#x79;&#x33;&#51;&#52;&#53;&#54;&#49;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact me">
-<meta property="og:url" content="https://ttaydes.github.io/blog/contact-me/index-3">
+<meta property="og:url" content="http://127.0.0.1:4000/blog/contact-me/index-3">
 <meta property="og:site_name" content="aydes&#39; b10g">
-<meta property="og:description" content="QQ: 1686046681 email: &#x74;&#x61;&#x79;&#x33;&#x33;&#x34;&#x35;&#54;&#x31;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">
+<meta property="og:description" content="QQ: 1686046681 email: &#x74;&#x61;&#x79;&#x33;&#51;&#52;&#53;&#54;&#49;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;">
 <meta property="og:locale">
 <meta property="article:published_time" content="2023-11-14T09:01:47.000Z">
 <meta property="article:modified_time" content="2024-10-23T10:21:13.116Z">
@@ -89,7 +89,7 @@
     
   </div>
   </div><article class="md-text content"><p>QQ: 1686046681</p>
-<p>email: <a href="mailto:&#x74;&#x61;&#x79;&#x33;&#x33;&#x34;&#x35;&#54;&#x31;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x74;&#x61;&#x79;&#x33;&#x33;&#x34;&#x35;&#54;&#x31;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p>email: <a href="mailto:&#x74;&#x61;&#x79;&#x33;&#51;&#52;&#53;&#54;&#49;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#x74;&#x61;&#x79;&#x33;&#51;&#52;&#53;&#54;&#49;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 </article>
 
 
@@ -122,7 +122,7 @@
     ctx.search = {};
     ctx.search.service = `local_search`;
     if (ctx.search.service == 'local_search') {
-      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
       ctx.search[ctx.search.service] = service_obj;
     }
   }
@@ -424,7 +424,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {
