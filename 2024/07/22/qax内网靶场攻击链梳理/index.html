@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 7.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,14 +17,18 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>Archives - aydes' b10g</title>
+  <title>攻击链梳理 - aydes' b10g</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Archives">
-<meta property="og:url" content="https://ttaydes.github.io/blog/archives/2023/index.html">
+    <meta name="description" content="2024.7.1610:44:41(告警) 发现冰蝎webshell流量告警 攻击ip: 10.110.230.239 受害ip: 10.95.209.77 (tomcat)根据冰蝎特征基本判断是冰蝎webshell上传 2024.7.16 10:08:21 第一次连接webshell 受害ip: 10.95.209.77 2024.7.16 10:08:21—-2024.7.16 10:45:1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="攻击链梳理">
+<meta property="og:url" content="https://ttaydes.github.io/blog/2024/07/22/qax%E5%86%85%E7%BD%91%E9%9D%B6%E5%9C%BA%E6%94%BB%E5%87%BB%E9%93%BE%E6%A2%B3%E7%90%86/index.html">
 <meta property="og:site_name" content="aydes&#39; b10g">
+<meta property="og:description" content="2024.7.1610:44:41(告警) 发现冰蝎webshell流量告警 攻击ip: 10.110.230.239 受害ip: 10.95.209.77 (tomcat)根据冰蝎特征基本判断是冰蝎webshell上传 2024.7.16 10:08:21 第一次连接webshell 受害ip: 10.95.209.77 2024.7.16 10:08:21—-2024.7.16 10:45:1">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-07-22T07:32:48.000Z">
+<meta property="article:modified_time" content="2025-01-15T16:21:32.000Z">
 <meta property="article:author" content="aydes">
 <meta name="twitter:card" content="summary">
   
@@ -47,7 +51,7 @@
 </head>
 <body>
 
-<div class="l_body s:aa index tech" id="start" layout="undefined" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://raw.githubusercontent.com/ttaydes/images/blog-img/images1.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/blog/"><div class="main" ff="title">aydes' b10g</div><div class="sub normal cap"><._.></div><div class="sub hover cap" style="opacity:0"> security and freedom</div></a></div></header>
@@ -59,17 +63,102 @@
 <nav class="menu dis-select"></nav>
 </div>
 <div class="widgets">
+
+
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2023/06/01/Home/"><span class="title">主页</span></a><a class="item title" href="/blog/2024/07/22/qax%E5%86%85%E7%BD%91%E9%9D%B6%E5%9C%BA%E6%94%BB%E5%87%BB%E9%93%BE%E6%A2%B3%E7%90%86/"><span class="title">攻击链梳理</span></a><a class="item title" href="/blog/2025/01/15/Not/"><span class="title">NoT- 个人开发用于提升效率的工具</span></a><a class="item title" href="/blog/2024/01/05/2023%E5%B9%B4-%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B%E5%AE%89%E5%BE%BD%E7%9C%81%E8%B5%9B-%E9%83%A8%E5%88%86wp-2/"><span class="title">2023年 全国大学生信息安全竞赛安徽省赛 部分WP</span></a><a class="item title" href="/blog/2024/04/15/sql-blind%E7%9B%B2%E6%B3%A8-%E7%BB%BC%E5%90%88%E8%84%9A%E6%9C%AC-by-aydes-2/"><span class="title">SQL blind(盲注) 综合脚本 by aydes</span></a><a class="item title" href="/blog/2023/05/31/winhex-%E4%BC%AA%E5%8A%A0%E5%AF%86-2/"><span class="title">CTF</span></a><a class="item title" href="/blog/2023/06/11/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E4%B9%8B%E6%A0%88-2/"><span class="title">二叉树的遍历之栈</span></a><a class="item title" href="/blog/2023/05/31/%E5%B0%8F%E8%BF%AA%E7%BD%91%E5%AE%89%E7%AC%94%E8%AE%B0-2/"><span class="title">web安全</span></a><a class="item title" href="/blog/2024/06/06/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8-2/"><span class="title">内网安全</span></a><a class="item title" href="/blog/2024/03/02/%E9%9D%92%E5%B0%91%E5%B9%B4ctf-2024-round1-wp-2/"><span class="title">青少年CTF 2024 round1 wp</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://raw.githubusercontent.com/ttaydes/images/blog-img/images1.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/blog/"><div class="main" ff="title">aydes' b10g</div><div class="sub normal cap"><._.></div><div class="sub hover cap" style="opacity:0"> security and freedom</div></a></div></header>
-
- 
 
 
-<div class="navbar top"><nav class="post"><a href="/blog/">Recent</a><a href="/blog/categories/">Categories</a><a class="active" href="/blog/archives/">Archives</a></nav></div><div class="post-list archives"><article class="" id="archive"><div class='archive-header h4'>2025</div><div class="archive-list"><a class='post fs14' href="/blog/2025/01/15/Not/"><time>01-15</time><span>NoT- 个人开发用于提升效率的工具</span></a></div></article><article class="" id="archive"><div class='archive-header h4'>2024</div><div class="archive-list"><a class='post fs14' href="/blog/2024/08/11/java%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E8%AF%AD%E8%A8%80%EF%BC%882024-8-11%EF%BC%89-2/"><time>08-11</time><span>Java是世界上最好的语言（2024.8.11）</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/07/22/qax%E5%86%85%E7%BD%91%E9%9D%B6%E5%9C%BA%E6%94%BB%E5%87%BB%E9%93%BE%E6%A2%B3%E7%90%86/"><time>07-22</time><span>攻击链梳理</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/06/06/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8-2/"><time>06-06</time><span>内网安全</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/04/15/sql-blind%E7%9B%B2%E6%B3%A8-%E7%BB%BC%E5%90%88%E8%84%9A%E6%9C%AC-by-aydes-2/"><time>04-15</time><span>SQL blind(盲注) 综合脚本 by aydes</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/03/02/%E9%9D%92%E5%B0%91%E5%B9%B4ctf-2024-round1-wp-2/"><time>03-02</time><span>青少年CTF 2024 round1 wp</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/01/05/2023%E5%B9%B4-%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B%E5%AE%89%E5%BE%BD%E7%9C%81%E8%B5%9B-%E9%83%A8%E5%88%86wp-2/"><time>01-05</time><span>2023年 全国大学生信息安全竞赛安徽省赛 部分WP</span></a></div></article><article class="" id="archive"><div class='archive-header h4'>2023</div><div class="archive-list"><a class='post fs14' href="/blog/2023/06/11/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E4%B9%8B%E6%A0%88-2/"><time>06-11</time><span>二叉树的遍历之栈</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2023/06/01/Home/"><time>06-01</time><span>主页</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2023/05/31/%E5%B0%8F%E8%BF%AA%E7%BD%91%E5%AE%89%E7%AC%94%E8%AE%B0-2/"><time>05-31</time><span>web安全</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2023/05/31/winhex-%E4%BC%AA%E5%8A%A0%E5%AF%86-2/"><time>05-31</time><span>CTF</span></a></div></article></div>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/blog/blog/">Home</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/blog/">Blog</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/uncategorized/">uncategorized</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">Posted on: <time datetime="2024-07-22T07:32:48.000Z">2024-07-22</time></span><span class="sep updated"></span><span class="text updated">Updated on: <time datetime="2025-01-15T16:21:32.000Z">2025-01-16</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>攻击链梳理</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><p>2024.7.16<br>10:44:41(告警)</p>
+<p>发现冰蝎webshell流量告警</p>
+<p>攻击ip: 10.110.230.239 受害ip: 10.95.209.77 (tomcat)<br>根据冰蝎特征基本判断是冰蝎webshell上传</p>
+<p>2024.7.16 10:08:21</p>
+<p>第一次连接webshell 受害ip: 10.95.209.77</p>
+<p>2024.7.16 10:08:21—-2024.7.16 10:45:13 之间进行间断的执行命令操作</p>
+<p>2024.7.16<br>10:07:42</p>
+<p>Tomcat 远程代码执行(CVE-2017-12615)(成功) 受害ip: 10.95.209.77</p>
+<p>由漏洞数据包内容特征 并结合后门冰蝎的告警 基本判断是该漏洞导致webshell的上传<br>最早在2024-07-15 10:11:25 攻击者尝试利用漏洞上传webshell<br>2024-07-15 10:13:37攻击者尝试客户端连接  </p>
+<p>解密数据包 受害ip: 10.95.209.77</p>
+<p>由上述漏洞捕捉到的明文数据包 得到密钥md5值<br>根据解密结果得到受害机具有 ens33 和 ens34 双网卡<br>en34ip ：192.168.8.130 （可能存在192.168.8.0&#x2F;24 c段横向）<br>2024-07-15 10:13:37——- 获取系统信息<br>2024-07-15 10:13:43 —— cd &#x2F;opt&#x2F; ;ifconfig<br>2024-07-15 10:13:40 —— whoami<br>2024-07-15 10:25:24——- 获取系统信息<br>2024-07-15 10:25:32——-cd &#x2F;opt&#x2F; ;useradd test 添加test用户<br>2024-07-15 10:28:21——-cd &#x2F;opt&#x2F; ;passwd test 失败  </p>
+<p>2024-07-16 10:07:42 —– 再次利用漏洞上传webshell<br>2024-07-16 10:08:21——- 尝试连接webshell 成功（未解）<br>2024-07-16 10:18:15—–获取系统信息  </p>
+<p>分析攻击ip：10.110.230.239&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
+<p>2024-07-11 14:06:13</p>
+<p>发现受害机器 10.95.209.15 （8080web应用尝试漏洞利用）</p>
+<p><code>2024-07-11 14:06:13</code>-—–<code>14:33:36</code><br>尝试利用接口POST &#x2F;ureport&#x2F;designer&#x2F;saveReportFile<br>发现其c2 ip： 101.201.209.38:81 尝试<br>远程命令执行<br>目录穿越 失败  </p>
+<p>2024-07-11 14:34:51–2024-07-11 14:36:38<br>攻击者尝试10.95.209.15:81<br>利用nginx 配置不当<br>&#x2F;tp5&#x2F;thinkphp&#x2F;<br>&#x2F;tp5&#x2F;<br>敏感目录泄露  </p>
+<p>2024-07-11 14:43:42—2024-07-11 14:44:01<br>攻击者尝试10.95.209.15:82<br>利用nginx 配置不当<br>&#x2F;tp5&#x2F;thinkphp&#x2F;<br>&#x2F;tp5&#x2F;<br>敏感目录泄露  </p>
+<p>2024-07-16 10:47:56</p>
+<p>发现受害机器 10.95.209.153<br><strong>2024-07-16 10:47:56</strong>-———–<strong>8080web应用尝试弱口令利用</strong> 失败</p>
+<p>2024-07-16 14:50:05 ———-10.95.209.153:82<br>尝试命令执行post &#x2F;发送 url&#x3D;file:&#x2F;&#x2F;&#x2F;etc&#x2F;passwd 获取敏感文件攻击成功</p>
+<p>分析受害ip：10.95.209.77&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
+<p>2024-07-16 10:23:18</p>
+<p>怀疑攻击者利用受害者ip的en34网卡 192.168.8.130 c段横向攻击</p>
+<p>2024-07-16 10:23:18<br>尝试攻击目标主机 ： 192.168.8.254<br>尝试利用接口POST &#x2F;webtools&#x2F;control&#x2F;xmlrpc 实行xxe攻击 失败<br>2024-07-16 10:23:18<br>尝试攻击目标主机： 192.168.8.132:8888<br>尝试利用接口POST &#x2F;?q&#x3D;node&amp;destination&#x3D;node sql注入攻击 失败  </p>
+<p>发现直到2024-07-16 10:23:38 的20s内 出现多个漏洞的告警事件<br>初步判定攻击者使用漏扫工具扫描c段ip  </p>
+<p>分析受害ip：10.95.209.15&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;  </p>
+<p>2024-06-24 03:10:12</p>
+<p>攻击ip :10.95.58.130</p>
+<p>nmap扫描</p>
+<p>2024-06-27 06:48:56&amp;2024-06-30 07:52:10</p>
+<p>攻击ip: 10.95.58.137  </p>
+<p>nmap扫描</p>
+<p>2024-07-01 07:54:11</p>
+<p>攻击ip: 10.95.58.104</p>
+<p>nmap扫描</p>
+<p>2024-07-02 22:33:57&amp;2024-07-10 22:27:38</p>
+<p>攻击ip: 10.95.58.111</p>
+<p>2024-07-05 23:23:44<br>nmap 扫描</p>
+<p>2024-07-04 22:56:32</p>
+<p>攻击ip: 10.95.58.103</p>
+<p>nmap 扫描</p>
+<p>2024-07-06 22:04:45&amp;2024-07-12 01:34:06</p>
+<p><strong>攻击ip:</strong> 10.95.58.132</p>
+<p>nmap 扫描</p>
+<p>2024-07-09 17:43:50—2024-07-09 17:44:08</p>
+<p>**攻击ip:**10.95.209.6</p>
+<p>漏扫</p>
+<p>2024-07-12 01:34:06</p>
+<p><strong>攻击ip:</strong> 10.95.58.31</p>
+<p>nmap 扫描</p>
+<p>=&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
+<p>总结</p>
+<p>10.110.230.239 利用目标10.95.209.77 tomcat 上传漏洞上传冰蝎webshell<br>执行命令并横向 192.168.8.132:8888 和 192.168.8.254 两个目标 尝试漏扫攻击 未果</p>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>License</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/blog/2024/08/11/java%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E8%AF%AD%E8%A8%80%EF%BC%882024-8-11%EF%BC%89-2/">Java是世界上最好的语言（2024.8.11）</a></div><div class="item" id="next"><div class="note">Older</div><a href="/blog/2024/06/06/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8-2/">内网安全</a></div></section></div>
+
+
+
+
+
+
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">aydes</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1">Stellar 1.29.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">

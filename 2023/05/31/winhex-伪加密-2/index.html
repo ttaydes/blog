@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 7.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,14 +17,18 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>Archives - aydes' b10g</title>
+  <title>CTF - aydes' b10g</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Archives">
-<meta property="og:url" content="https://ttaydes.github.io/blog/archives/2023/index.html">
+    <meta name="description" content="WEB ping  ;A;B先执行A，再执行B&amp;A&amp;B简单拼接，A B之间无制约关系AB显示B的执行结果&amp;&amp;A&amp;&amp;BA执行成功，然后才会执行BABA执行失败，然后才会执行B若上述被过滤 可用换行%0a url编码替代 （在网址输入框）代替空格$IFS  ${IFS} $IFS$1 &#x2F;&#x2F;1 改 成 1改成1改成加其他数字貌似都行 &amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CTF">
+<meta property="og:url" content="https://ttaydes.github.io/blog/2023/05/31/winhex-%E4%BC%AA%E5%8A%A0%E5%AF%86-2/index.html">
 <meta property="og:site_name" content="aydes&#39; b10g">
+<meta property="og:description" content="WEB ping  ;A;B先执行A，再执行B&amp;A&amp;B简单拼接，A B之间无制约关系AB显示B的执行结果&amp;&amp;A&amp;&amp;BA执行成功，然后才会执行BABA执行失败，然后才会执行B若上述被过滤 可用换行%0a url编码替代 （在网址输入框）代替空格$IFS  ${IFS} $IFS$1 &#x2F;&#x2F;1 改 成 1改成1改成加其他数字貌似都行 &amp;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-05-30T16:09:56.000Z">
+<meta property="article:modified_time" content="2024-10-25T03:50:34.000Z">
 <meta property="article:author" content="aydes">
 <meta name="twitter:card" content="summary">
   
@@ -47,7 +51,7 @@
 </head>
 <body>
 
-<div class="l_body s:aa index tech" id="start" layout="undefined" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://raw.githubusercontent.com/ttaydes/images/blog-img/images1.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/blog/"><div class="main" ff="title">aydes' b10g</div><div class="sub normal cap"><._.></div><div class="sub hover cap" style="opacity:0"> security and freedom</div></a></div></header>
@@ -59,21 +63,198 @@
 <nav class="menu dis-select"></nav>
 </div>
 <div class="widgets">
+
+
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2023/06/01/Home/"><span class="title">主页</span></a><a class="item title" href="/blog/2024/07/22/qax%E5%86%85%E7%BD%91%E9%9D%B6%E5%9C%BA%E6%94%BB%E5%87%BB%E9%93%BE%E6%A2%B3%E7%90%86/"><span class="title">攻击链梳理</span></a><a class="item title" href="/blog/2025/01/15/Not/"><span class="title">NoT- 个人开发用于提升效率的工具</span></a><a class="item title" href="/blog/2024/01/05/2023%E5%B9%B4-%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B%E5%AE%89%E5%BE%BD%E7%9C%81%E8%B5%9B-%E9%83%A8%E5%88%86wp-2/"><span class="title">2023年 全国大学生信息安全竞赛安徽省赛 部分WP</span></a><a class="item title" href="/blog/2024/04/15/sql-blind%E7%9B%B2%E6%B3%A8-%E7%BB%BC%E5%90%88%E8%84%9A%E6%9C%AC-by-aydes-2/"><span class="title">SQL blind(盲注) 综合脚本 by aydes</span></a><a class="item title" href="/blog/2023/05/31/winhex-%E4%BC%AA%E5%8A%A0%E5%AF%86-2/"><span class="title">CTF</span></a><a class="item title" href="/blog/2023/06/11/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E4%B9%8B%E6%A0%88-2/"><span class="title">二叉树的遍历之栈</span></a><a class="item title" href="/blog/2023/05/31/%E5%B0%8F%E8%BF%AA%E7%BD%91%E5%AE%89%E7%AC%94%E8%AE%B0-2/"><span class="title">web安全</span></a><a class="item title" href="/blog/2024/06/06/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8-2/"><span class="title">内网安全</span></a><a class="item title" href="/blog/2024/03/02/%E9%9D%92%E5%B0%91%E5%B9%B4ctf-2024-round1-wp-2/"><span class="title">青少年CTF 2024 round1 wp</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://raw.githubusercontent.com/ttaydes/images/blog-img/images1.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/blog/"><div class="main" ff="title">aydes' b10g</div><div class="sub normal cap"><._.></div><div class="sub hover cap" style="opacity:0"> security and freedom</div></a></div></header>
-
- 
 
 
-<div class="navbar top"><nav class="post"><a href="/blog/">Recent</a><a href="/blog/categories/">Categories</a><a class="active" href="/blog/archives/">Archives</a></nav></div><div class="post-list archives"><article class="" id="archive"><div class='archive-header h4'>2025</div><div class="archive-list"><a class='post fs14' href="/blog/2025/01/15/Not/"><time>01-15</time><span>NoT- 个人开发用于提升效率的工具</span></a></div></article><article class="" id="archive"><div class='archive-header h4'>2024</div><div class="archive-list"><a class='post fs14' href="/blog/2024/08/11/java%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E8%AF%AD%E8%A8%80%EF%BC%882024-8-11%EF%BC%89-2/"><time>08-11</time><span>Java是世界上最好的语言（2024.8.11）</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/07/22/qax%E5%86%85%E7%BD%91%E9%9D%B6%E5%9C%BA%E6%94%BB%E5%87%BB%E9%93%BE%E6%A2%B3%E7%90%86/"><time>07-22</time><span>攻击链梳理</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/06/06/%E5%86%85%E7%BD%91%E5%AE%89%E5%85%A8-2/"><time>06-06</time><span>内网安全</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/04/15/sql-blind%E7%9B%B2%E6%B3%A8-%E7%BB%BC%E5%90%88%E8%84%9A%E6%9C%AC-by-aydes-2/"><time>04-15</time><span>SQL blind(盲注) 综合脚本 by aydes</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/03/02/%E9%9D%92%E5%B0%91%E5%B9%B4ctf-2024-round1-wp-2/"><time>03-02</time><span>青少年CTF 2024 round1 wp</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2024/01/05/2023%E5%B9%B4-%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B%E5%AE%89%E5%BE%BD%E7%9C%81%E8%B5%9B-%E9%83%A8%E5%88%86wp-2/"><time>01-05</time><span>2023年 全国大学生信息安全竞赛安徽省赛 部分WP</span></a></div></article><article class="" id="archive"><div class='archive-header h4'>2023</div><div class="archive-list"><a class='post fs14' href="/blog/2023/06/11/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E4%B9%8B%E6%A0%88-2/"><time>06-11</time><span>二叉树的遍历之栈</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2023/06/01/Home/"><time>06-01</time><span>主页</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2023/05/31/%E5%B0%8F%E8%BF%AA%E7%BD%91%E5%AE%89%E7%AC%94%E8%AE%B0-2/"><time>05-31</time><span>web安全</span></a></div><div class="archive-list"><a class='post fs14' href="/blog/2023/05/31/winhex-%E4%BC%AA%E5%8A%A0%E5%AF%86-2/"><time>05-31</time><span>CTF</span></a></div></article></div>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/blog/blog/">Home</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/blog/">Blog</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/CTF/">CTF</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">Posted on: <time datetime="2023-05-30T16:09:56.000Z">2023-05-31</time></span><span class="sep updated"></span><span class="text updated">Updated on: <time datetime="2024-10-25T03:50:34.000Z">2024-10-25</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>CTF</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h1 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h1><ul>
+<li><p>ping</p>
+</li>
+<li><p>;A;B先执行A，再执行B&amp;A&amp;B简单拼接，A B之间无制约关系AB显示B的执行结果&amp;&amp;A&amp;&amp;BA执行成功，然后才会执行BABA执行失败，然后才会执行B若上述被过滤 可用换行%0a url编码替代 （在网址输入框）代替空格$IFS</p>
+<ul>
+<li>${IFS} $IFS$1 &#x2F;&#x2F;1 改 成 1改成1改成加其他数字貌似都行 &lt; &lt;&gt; {cat,flag.php} &#x2F;&#x2F;用逗号实现了空格功能 %20 %09&#x2F; （斜杠也可以）</li>
+</ul>
+</li>
+<li><p><code>$(printf &quot;路径&quot;)</code>代替路径 里面用十六进制\x66形式</p>
+</li>
+<li><p>php 文件包含漏洞文件包含函数加载的参数没有经过过滤或严格定义，可以被用户控制， 包含其他恶意文件，导致了执行非预期代码</p>
+</li>
+</ul>
+<p>分类：远程文件包含RFI</p>
+<p>本地文件包含LFI</p>
+<p><em>区分他们最简单的方法就是 php.ini 中是否开启了allow_url_include。 如果开启了我们就有可能包含远程文件</em></p>
+<p>_php 中引发文件包含漏洞的通常是以下四个函数_： 1、include() 当使用该函数包含文件时，只有代码执行到 include() 函数时才将文件包含进来， 发生错误时只给出一个警告，继续向下执行。</p>
+<p>2、include_once() 功能和 include() 相同，区别在于当重复调用同一文件时，程序只调用一次。</p>
+<p>3、require() 只要程序一执行就会立即调用文件,发生错误的时候会输出错误信息,并且终止脚本的运行</p>
+<p>4、require_once() 它的功能与 require() 相同，区别在于当重复调用同一文件时，程序只调用一次。</p>
+<p><strong>php伪协议利用</strong></p>
+<ol>
+<li>data协议data:&#x2F;&#x2F;协议必须在满足allow_url_fopen&#x3D;on，allow_url_include&#x3D;on下使用</li>
+</ol>
+<p>data:&#x2F;&#x2F; 伪协议利用php中流的概念，将原本include的文件流重定向到可控制的参数中</p>
+<p>data:&#x2F;&#x2F;text&#x2F;plain,<?php phpinfo();?><br>    &#x2F;&#x2F;如果此处对特殊字符进行了过滤，我们还可以通过base64编码后再输入：<br>data:&#x2F;&#x2F;text&#x2F;plain;base64,PD9waHAgcGhwaW5mbygpOyA&#x2F;Pg&#x3D;&#x3D;</p>
+<p>2.php协议</p>
+<p>利用条件：<br>1、allow_url_include &#x3D; On。</p>
+<p>php:&#x2F;&#x2F;filter用于读取源码。<br>eg: ?file1&#x3D;php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;flag.php&amp;file2&#x3D;php:&#x2F;&#x2F;input<br>​<br>php:&#x2F;&#x2F;input用于执行php代码<br>dict:&#x2F;&#x2F;<br>file:&#x2F;&#x2F;&#x2F;</p>
+<p><strong>php序列化和反序列化</strong></p>
+<p>1.<strong>序列化就是将一个对象转换成字符串。字符串包括，属性名，属性值，属性类型和该对象对应的类名。</strong> <strong>反序列化则相反将字符串重新恢复成对象</strong></p>
+<ul>
+<li>serialize() 函数会检查类中是否存在一个魔术方法 <code>__sleep()</code>。如果存在，**<code>__sleep()</code>方法会先被调用，然后才执行序列化操作<strong>。</strong>可以在<code>__sleep()</code>方法里决定哪些属性可以被序列化。如果没有__sleep()方法则默认序列化所有属性**</li>
+</ul>
+<?php  
+    class ctf{  
+        public $flag;  
+        public $name;  
+        public $age;  
+          
+    }  
+    $ctfer = new ctf();  
+    $ctfer->flag = 'flag{adada}';  
+    $ctfer->name = 'ev';  
+    $ctfer->age = '12';  
+    echo serialize($ctfer);  
+    echo '<br>';  
+​  
+    var\_dump(unserialize($a));  
+?>
+
+<ul>
+<li>反序列化函数unserialize()。反序列化就是将一个序列化了的对象或数组字符串，还原回去unserialize的时候，会 检查时候存在<strong>wakeup()函数，如果存在的话，会优先调用</strong>wakeup()函数。</li>
+<li>ascill 的超出打印区域将两位一组的十六进制 &#x3D;&#x3D;》十进制&#x3D;&#x3D;》 减去128 &#x3D;&#x3D;》转为ascii<strong>sql注入类</strong></li>
+<li>sqllite注入<ul>
+<li>sqlite注释符是‘–</li>
+<li>查询其全局模式表sqlite_master（存放本数据库所有表、视图、索引、触发器等的定义）可找到用户表的sql定义’</li>
+<li>payload：user&#x3D;’ union select name,sql from sqlite_master –</li>
+</ul>
+</li>
+<li>sql注入绕过姿势：<ul>
+<li>&#x2F;**&#x2F;或者++替换空格</li>
+<li>大小写</li>
+<li>递归重复</li>
+<li>待补充。。。</li>
+</ul>
+</li>
+<li>sql注入回显 （攻防世界–fakebook iframe的src暴露信息）可以结合序列化的返回渲染页面</li>
+<li>当目录存在某个flag.txt 但是不能读取或显示 用 伪协议 file:&#x2F;&#x2F;&#x2F;path 获取<strong>ping中检测绕过</strong><ul>
+<li>构造变量 若flag进行过滤 设置变量接受字母</li>
+<li>若过滤bash 使用sh 并将命令编码echo$IFS$1Y2F0IGZsYWcucGhwbase64$IFS$1-dsh</li>
+<li>内联执行 使用 `` 代替 ，将反引号内命令的输出作为输入执行，即：&#x2F;?ip&#x3D;2.2.2.2;cat$IFS$1`ls`</li>
+</ul>
+</li>
+</ul>
+<h2 id="代码审计"><a href="#代码审计" class="headerlink" title="代码审计"></a>代码审计</h2><h3 id="（一）php"><a href="#（一）php" class="headerlink" title="（一）php"></a>（一）php</h3><p>1.比较</p>
+<ul>
+<li>“&#x3D;&#x3D;” 与“&#x3D;&#x3D;&#x3D;”注意：”&#x3D;&#x3D;“ 比较字符串和整形 会强制转换成字符串如 “1admin” 与 1 比较 &#x3D;&#x3D;&#x3D;&gt; true 取字符串开头数字转换为字符</li>
+</ul>
+<h6 id="若以“0e”开头的字符串-会当作0x10的xxx次方-结果为零"><a href="#若以“0e”开头的字符串-会当作0x10的xxx次方-结果为零" class="headerlink" title="若以“0e”开头的字符串 会当作0x10的xxx次方 结果为零"></a>若以“0e”开头的字符串 会当作0x10的xxx次方 结果为零</h6><ul>
+<li><p>hash 比较缺陷md5(‘240610708’) &#x3D;&#x3D; md5(‘QNKCDZ0’) 结果都是0e开头 所以都是零 结果相等var_dump(md5(‘240610708’)&#x3D;&#x3D;md5(‘QNKCDZO’));<br>var_dump(md5(‘aabg7XSs’)&#x3D;md5(‘aabC9RqS’));<br>var_dump(sha1(‘aarozmok’)&#x3D;&#x3D;shal(‘aaK1STfY’));<br>var_dump(sha1(‘aa08ZKZF’)&#x3D;&#x3D;sha1(‘aa30FF9m’));<br>var_dump(‘e010e2”&#x3D;’1e3’):<br>var_dump(‘0×1234Ab’&#x3D;&#x3D;’1193131’)：<br>var_dump(‘0xABCdef’&#x3D;&#x3D;’0xABCdef’);<br>​</p>
+</li>
+<li><p>bool欺骗存在json_decode 和 unserialize 时候 部分结构解释为bool类型 造成欺骗</p>
+</li>
+<li><p>数字转换欺骗</p>
+<ul>
+<li>一个字符串是0x开头的时候，PHP会将此字符串解析成为十进制然后再进行比较所以0x1e240 &#x3D;&#x3D; 123456</li>
+</ul>
+</li>
+<li><p><strong>md5()<strong>只能传输字符串 若传入array会使所有array的md5相同</strong>hash碰撞</strong> 会碰撞出两个相同的值switch()会对传入字符串类型强转</p>
+</li>
+<li><p>is_numeric() （bool）</p>
+<ul>
+<li>传入是是数字和数字字符串则返回 TRUE</li>
+<li>如果此时传入十六进制0x3120616e6420313d31 存入后字符串 为 1 and 1&#x3D;1可进行二次注入</li>
+</ul>
+</li>
+<li><p>in_array() &#x2F; array_search()</p>
+<ul>
+<li>eg: ‘abc’ 在 array(0,1,2) 中 返回true</li>
+</ul>
+</li>
+<li><p>empty （以下都认为 为空）</p>
+<ul>
+<li>“” (空字符串)</li>
+<li>0 (作为整数的0)</li>
+<li>0.0 (作为浮点数的0)</li>
+<li>“0” （作为字符串的0）</li>
+<li>NULL</li>
+<li>FALSE</li>
+<li>array() （空数组）</li>
+<li>$var; (一个声明了 但无值的变量)</li>
+</ul>
+</li>
+<li><p>$$ 的用法<a target="_blank" rel="noopener" href="https://www.yiibai.com/php/php-dollar-doubledollar.html">“$$的用法”</a></p>
+</li>
+<li><p>extract()</p>
+</li>
+<li><p>parse_str()把查询字符串解析到变量中</p>
+</li>
+</ul>
+<h6 id="php常用函数："><a href="#php常用函数：" class="headerlink" title="php常用函数："></a>php常用函数：</h6><ul>
+<li><p>ord() :ord() 函数返回字符串中第一个字符的 ASCII 值。</p>
+</li>
+<li><p>strrev() 反转字符串</p>
+</li>
+<li><p>substr() 返回字符串的子串 格式：substr ( string, start , length )</p>
+</li>
+<li><p>isset() 用于检测变量是否已设置，且非 NULL</p>
+</li>
+<li><p>preg_match() 用于执行一个正则表达式匹配</p>
+</li>
+<li><p>str_rot13() 函数对字符串执行 ROT13 编码。ROT13 编码是把每一个字母在字母表中向前移动 13 个字母得到。数字和非字母字符保持不变。</p>
+</li>
+<li><p>call_user_func() 传入有参或无参函数 后面跟上参数</p>
+</li>
+<li><p>python反编译 uncompyle6 当前文件名.pyc &gt; 保存的文件名.py</p>
+</li>
+</ul>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>License</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/blog/2023/05/31/%E5%B0%8F%E8%BF%AA%E7%BD%91%E5%AE%89%E7%AC%94%E8%AE%B0-2/">web安全</a></div><div class="item" id="next"></div></section></div>
+
+
+
+
+
+
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">aydes</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1">Stellar 1.29.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">On This Page</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#WEB"><span class="toc-text">WEB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1"><span class="toc-text">代码审计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89php"><span class="toc-text">（一）php</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E8%8B%A5%E4%BB%A5%E2%80%9C0e%E2%80%9D%E5%BC%80%E5%A4%B4%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2-%E4%BC%9A%E5%BD%93%E4%BD%9C0x10%E7%9A%84xxx%E6%AC%A1%E6%96%B9-%E7%BB%93%E6%9E%9C%E4%B8%BA%E9%9B%B6"><span class="toc-text">若以“0e”开头的字符串 会当作0x10的xxx次方 结果为零</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#php%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%EF%BC%9A"><span class="toc-text">php常用函数：</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>Scroll to Top</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
